@@ -188,7 +188,7 @@ const navItems = [
 
 
   return (
-    <div className="relative bg-[url('/background.jpg')] bg-cover bg-center flex flex-col items-center overflow-hidden h-screen sm:h-screen">
+    <div className="relative bg-[url('/background.jpg')] bg-cover bg-center flex flex-col items-center overflow-hidden min-h-screen sm:h-screen">
       <ParticleBackground />
       <GlowEffect />
 
