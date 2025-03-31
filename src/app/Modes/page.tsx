@@ -625,6 +625,9 @@ const ModesSection = () => {
   return (
     <div className="relative min-h-screen bg-gray-900 overflow-hidden">
       {/* Loading Screen */}
+      <a href="/" className="text-blue-500 hover:underline fixed top-4 left-4">
+        ← Back To Home
+      </a>
       {isMounted && isLoading && (
         <AnimatePresence>
           <motion.div

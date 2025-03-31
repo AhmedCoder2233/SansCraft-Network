@@ -373,7 +373,9 @@ const VotingPage = () => {
 
       {/* Background with Tailwind */}
       <div className="fixed inset-0 bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat z-0" />
-
+      <a href="/" className="text-blue-500 hover:underline fixed top-4 left-4">
+        ← Back To Home
+      </a>
       {/* Particle Background */}
       <ParticleBackground />
 

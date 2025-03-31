@@ -47,7 +47,6 @@ const ShopCard = ({
 }) => {
   const isRank = "perks" in item;
   const content = isRank ? item.perks : item.rewards;
-
   return (
     <motion.div
       initial={{ scale: 0.9, opacity: 0 }}
@@ -68,6 +67,9 @@ const ShopCard = ({
           : "none",
       }}
     >
+      <a href="/" className="text-blue-500 hover:underline fixed top-4 left-4">
+        ← Back To Home
+      </a>
       <div className="p-6">
         <div className="flex justify-between items-start mb-4">
           <div className="flex items-center gap-3">
