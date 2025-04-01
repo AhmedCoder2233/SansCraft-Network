@@ -410,7 +410,7 @@ export default function ShopPage() {
       price: "8.00 EUR",
       description: "Unlock the Silver-tier Legacy Mine and Lightning Kit",
       perks: [
-        "✅ Permanent rank that never expires",
+        "✅ Seasonal rank that never expires",
         "✅ Access to Silver-tier Legacy Mine (/warp LegacyMines)",
         "✅ Unlock Lightning (Seasonal) Rank Kit",
         "✅ Priority warp access",
@@ -428,7 +428,7 @@ export default function ShopPage() {
       price: "15.00 EUR",
       description: "Access Gold-tier rewards and enhanced perks",
       perks: [
-        "✅ Permanent rank that never expires",
+        "✅ Seasonal rank that never expires",
         "✅ Access to Gold-tier and all lower-tier mines",
         "✅ Unlock Lightning (Seasonal) Rank Kit",
         "✅ Priority warp access",
@@ -447,7 +447,7 @@ export default function ShopPage() {
       price: "22.00 EUR",
       description: "Diamond-tier access with powerful benefits",
       perks: [
-        "✅ Permanent rank that never expires",
+        "✅ Seasonal rank that never expires",
         "✅ Access to Diamond-tier and all lower-tier mines",
         "✅ Unlock Lightning (Seasonal) Rank Kit",
         "✅ Priority warp access",
@@ -467,7 +467,7 @@ export default function ShopPage() {
       price: "28.00 EUR",
       description: "Emerald-tier prestige with elite perks",
       perks: [
-        "✅ Permanent rank that never expires",
+        "✅ Seasonal rank that never expires",
         "✅ Access to Emerald-tier and all lower-tier mines",
         "✅ Unlock Earth (Seasonal) Rank Kit",
         "✅ Priority warp access",
@@ -488,7 +488,7 @@ export default function ShopPage() {
       price: "35.00 EUR",
       description: "The ultimate rank with all privileges",
       perks: [
-        "✅ Permanent rank that never expires",
+        "✅ Seasonal rank that never expires",
         "✅ Access to Supreme-tier and all lower-tier mines",
         "✅ Unlock Earth (Seasonal) Rank Kit",
         "✅ Priority warp access",

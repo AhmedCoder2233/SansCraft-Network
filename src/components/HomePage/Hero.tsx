@@ -57,7 +57,7 @@ export default function Hero() {
   // Only render client-side content after hydration
   if (!isClient) {
     return (
-      <div className="relative bg-[url('/background.jpg')] bg-cover bg-center flex flex-col items-center overflow-hidden">
+      <div className="relative bg-[url('/background.jpg')] bg-cover bg-center flex flex-col items-center overflow-hidden h-[940px] sm:h-screen">
         {/* Empty shell that matches the final layout */}
         <div className="w-full flex flex-col items-center mt-16 px-4 relative z-10">
           <div className="w-72 h-72 mb-8" />
