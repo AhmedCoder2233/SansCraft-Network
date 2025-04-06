@@ -143,6 +143,10 @@ const VoteCard = ({
   const [isHovered, setIsHovered] = useState(false);
   const title = `Vote Link ${index + 1}`;
 
+  const handleVoteClick = () => {
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -156,6 +160,7 @@ const VoteCard = ({
         background: `linear-gradient(135deg, ${color}20, ${color}05)`,
         boxShadow: `0 10px 30px -10px ${color}40`,
       }}
+      onClick={handleVoteClick}
     >
       {/* Floating icon */}
       <motion.div
@@ -202,15 +207,19 @@ const VoteCard = ({
           boxShadow: isHovered ? `0 0 20px ${color}` : `0 0 10px ${color}40`,
         }}
       >
-        <div
-          className="px-6 py-2 text-sm font-medium rounded-full"
+        <button
+          className="px-6 py-2 text-sm font-medium rounded-full z-50"
           style={{
             background: color,
             color: "white",
           }}
+          onClick={(e) => {
+            e.stopPropagation();
+            handleVoteClick();
+          }}
         >
           Vote Now
-        </div>
+        </button>
         <motion.div
           className="absolute inset-0 bg-white opacity-0"
           animate={{
@@ -485,9 +494,9 @@ const VotingPage = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="w-full max-w-6xl px-4 mb-16"
+            className="w-full max-w-6xl px-4 mb-16 z-50"
           >
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 z-50">
               {voteLinks.map((vote, index) => (
                 <VoteCard
                   key={index}
